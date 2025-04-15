@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DHTML Event Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #message {
+      font-size: 20px;
+      color: blue;
+    }
+    .event-area {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: lightgray;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Event Handling Example</h2>
+  
+  <div class="event-area" 
+    onmouseover="showMessage('I am a CSE student (Mouse Over)')" 
+    onclick="showMessage('I am a CSE student (Clicked)')" 
+    onkeypress="showMessage('I am a CSE student (Key Pressed)')" 
+    tabindex="0">
+    Hover, Click, or Press any Key Here
+  </div>
+  
+  <p id="message"></p>
+  
+  <script src="script.js"></script>
+</body>
+</html>

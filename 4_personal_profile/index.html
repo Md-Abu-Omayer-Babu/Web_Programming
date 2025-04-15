@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Profile</title>
+</head>
+<body>
+  <h2>Enter Your Profile</h2>
+  <form action="insert.php" method="POST">
+    Name: <input type="text" name="name" required><br><br>
+    DOB: <input type="date" name="dob" required><br><br>
+    Email: <input type="email" name="email" required><br><br>
+    Phone: <input type="text" name="phone" required><br><br>
+    Gender: 
+    <select name="gender" required>
+      <option value="">Select</option>
+      <option>Male</option>
+      <option>Female</option>
+    </select><br><br>
+    Address: <textarea name="address" required></textarea><br><br>
+    Nationality: <input type="text" name="nationality" required><br><br>
+    Blood Group: <input type="text" name="blood_group" required><br><br>
+    Bio: <textarea name="bio" required></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <button><a href="profile_view.html">View Profile</a></button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
