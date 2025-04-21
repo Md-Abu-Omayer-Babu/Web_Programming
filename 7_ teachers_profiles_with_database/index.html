@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher Profiles</title>
+</head>
+<body>
+  <h2>Teacher Profiles</h2>
+  <a href="add_teacher.html">Add New Teacher</a><br><br>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th><th>Subject</th><th>Email</th><th>Phone</th>
+        <th>Address</th><th>Department</th><th>DOB</th><th id="editBtn">Edit</th>
+      </tr>
+    </thead>
+    <tbody id="teacherTable"></tbody>
+  </table>
+
+  <h3 id = "editFormTitle" style="display:none">Edit Teacher</h3>
+
+  <form id="editForm" style="display:none;">
+    <input type="hidden" id="editId">
+    <input type="text" id="editName" placeholder="Name"><br>
+    <input type="text" id="editSubject" placeholder="Subject"><br>
+    <input type="email" id="editEmail" placeholder="Email"><br>
+    <input type="text" id="editPhone" placeholder="Phone"><br>
+    <input type="text" id="editAddress" placeholder="Address"><br>
+    <input type="text" id="editDepartment" placeholder="Department"><br>
+    <input type="date" id="editDOB"><br>
+    <button type="submit">Update</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
